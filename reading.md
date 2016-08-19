@@ -36,3 +36,8 @@ $$
 \begin{align}
 y \propto \frac{x \sin x} {\int_0^\infty x \sin x}
 \end{align}
+
+
+{% cite Murray13 %} 
+
+{% bibliography --cited %}

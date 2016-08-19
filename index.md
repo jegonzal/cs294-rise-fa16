@@ -27,6 +27,9 @@ tagline: <big><b>R</b></big>eal-time, <big><b>I</b></big>ntelligent, and <big><b
 
 
  -->
+ 
+
+{% cite Murray13 %} 
 
 Put course description here.
 

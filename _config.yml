@@ -38,7 +38,7 @@ baseurl: /cs294-rise-fa16
 #
 production_url : ucbrise.github.io
 
-gems: ["jekyll-sitemap"]
+gems: ["jekyll-sitemap", 'jekyll/scholar']
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -146,3 +146,31 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
+
+scholar:
+  style: apa
+  locale: en
+
+  sort_by: none
+  order: ascending
+
+  group_by: none
+  group_order: ascending
+
+  source: ./_bibliography
+  bibliography: references.bib
+  bibliography_template: "{{reference}}"
+
+  replace_strings: true
+  join_strings:    true
+
+  use_raw_bibtex_entry: false
+  bibtex_filters:
+  - superscript
+  - latex
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
